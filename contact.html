@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <section class="contact" id="contact">
+        <nav class="navbar background h-nav-resp">
+            <ul class="nav-list v-class-resp">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <div id="menu-bars" class="burger hide">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <ul class="mobile-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+        </nav>
+
+        <section class="address">
+            <h2 class="cnt-heading">CONTACT US</h2>
+            <div class="add-container">
+                <div class="add-box">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Address</h3>
+                    <p class="servp"><a style="text-decoration: none; color: black;" href="https://www.google.co.in/maps/">D-2, 3rd Floor, Shariff Chambers, Sector 16, New Panvel, Maharashtra-410206</a></p>
+                </div>
+                <div class="add-box">
+                    <i class="fas fa-phone"></i>
+                    <h3>Contact</h3>
+                    <a class="servp" href="tel:+919359681192" style="text-decoration: none;">022 2481 8000<br><a style="text-decoration: none; color: black;" href="mailto:goldenhour0250@gmail.com">goldenhour0250@gmail.com</a></p>
+                </div>
+            </div>
+        </section>
+
+        <h3 class="cnt-heading">SEND US MESSAGE</h3>
+
+        <form method="get" action="/feedback">
+            <div class="input-box">
+                <input type="text" name="name" placeholder="Enter Name">
+                <input type="email" name="email" placeholder="Enter Email">
+            </div>
+            <div class="input-box">
+                <input type="text" pattern="^[9876]+{1}[0-9]{9}" name="contact"  placeholder="Enter Contact Number">
+                <input type="text" name="occasion" placeholder="Occasion">
+            </div>
+            <textarea name="message" id="" placeholder="Your Message" cols="30" rows="10"></textarea>
+            <div>
+                <input type="submit" value="send message" class="submit-btn">
+            </div>
+            
+        </form>
+
+    </section>
+
+    <footer class="footer">
+        <div class="ftr-bar">
+            <div class="ftr-bar-container">
+                <div>
+                    <a target="_blank" href="https://www.facebook.com/" hidefocus="true"
+                        style="outline: none;">
+                        <img class="social" src="img/facebook.png" alt=""></a>
+                    <a target="_blank" href="https://www.instagram.com/" hidefocus="true"
+                        style="outline: none;">
+                        <img class="social" src="img/instagram.png" alt=""></a>
+                    <a target="_blank" href="https://www.pinterest.com/" hidefocus="true"
+                        style="outline: none;">
+                        <img class="social" src="img/pinterest.png" alt=""></a>
+                    <a target="_blank" href="https://www.linkedin.com/" hidefocus="true"
+                        style="outline: none;">
+                        <img class="social" src="img/linkedin.png" alt=""></a>
+                    <a target="_blank" href="https://www.youtube.com/" hidefocus="true"
+                        style="outline: none;">
+                        <img class="social" src="img/youtube.png" alt=""></a>
+                </div>
+
+                <div class="ftr-copyright">
+                    <p class="copyright">
+                        © 2024 Golden Hour.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/resp.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,505 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Rubik", sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+.hero-section {
+    background-image: url(img/venue-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+}
+
+.nav-list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.nav-list li,
+.mobile-menu li {
+    list-style: none;
+    padding: 15px;
+    font-weight: bold;
+}
+
+.nav-list li a,
+.mobile-menu li a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 80px;
+}
+
+.nav-list li a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+    top: 20px;
+}
+
+.hide {
+    display: none;
+}
+
+.mobile-menu {
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    z-index: 88;
+}
+
+.mobile-menu li a {
+    font-size: 18px;
+    color: black;
+}
+
+.mobile-menu li a:hover {
+    color: white;
+}
+
+.burger i {
+    font-size: 20px;
+    color: white;
+}
+
+.firstSection {
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.secondSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 40px;
+}
+
+.box-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 40%;
+    margin: auto;
+}
+
+.second {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.first {
+    width: 35%;
+}
+
+.first img {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    margin: auto;
+}
+
+.bigText {
+    color: white;
+}
+
+.smallText {
+    font-family: "Rubik", sans-serif;
+    color: white;
+}
+
+.buttonCall {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.btn {
+    display: flex;
+    gap: .6rem;
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: rgb(224, 221, 221);
+    border: 2px;
+    padding: 8px 16px;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.btn svg {
+    width: 1rem;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.abt-heading {
+    text-align: center;
+    color: black;
+    margin: 19px 0;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    padding-top: 0;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.abt-img {
+    width: 35rem;
+}
+
+.abt-img img {
+    width: 100%;
+    border-radius: 1.5rem;
+}
+
+.abt-content {
+    width: 30rem;
+}
+
+.heading {
+    text-align: center;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    color: black;
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0 16rem;
+    padding-bottom: 2rem;
+}
+
+.box-container .box {
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    text-align: center;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+    padding: 1.2rem;
+    width: 14rem;
+}
+
+.box-container .box i {
+    border-radius: 50%;
+    font-size: 15px;
+    color: black;
+    padding: 1.2rem;
+    background-color: white;
+}
+
+.box-container .box h3 {
+    font-size: 20px;
+}
+
+.servp {
+    color: black;
+}
+
+.pic-heading {
+    text-align: center;
+    padding-top: 1rem;
+    color: black;
+    margin-bottom: 1rem;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+
+.gallery .pic-container {
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-bottom: 2rem;
+}
+
+.gallery .pic-container .pic {
+    width: 16rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    text-align: center;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+    padding: 1.2rem;
+    text-transform: uppercase;
+}
+
+.pic .img-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.gallery .pic-container .pic img {
+    width: 100%;
+    height: 16rem;
+    object-fit: cover;
+    transition: all 300ms;
+}
+
+.gallery .pic-container .pic:hover img {
+    border: 2px solid black;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(245, 244, 244);
+}
+
+.cnt-heading {
+    text-align: center;
+    color: black;
+    margin: 33px 0;
+    cursor: pointer;
+}
+
+.add-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0 16rem;
+    padding-bottom: 2rem;
+}
+
+.add-container .add-box {
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.2);
+    text-align: center;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+    padding: 1.2rem;
+    width: 16rem;
+}
+
+.add-container .add-box i {
+    border-radius: 50%;
+    font-size: 15px;
+    color: black;
+    padding: 1.2rem;
+    background-color: white;
+}
+
+.contact form {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.input-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.contact form .input-box input {
+    width: 50%;
+    background-color: white;
+    border-radius: .4rem;
+    padding: .8rem;
+    color: black;
+    border: 1px solid black;
+}
+
+
+.contact form textarea {
+    width: 100%;
+    background-color: white;
+    border-radius: .5rem;
+    padding: .8rem;
+    font-size: 1.3rem;
+    color: black;
+    border: 1px solid black;
+}
+
+.contact form .input-box input::placeholder {
+    font-size: 1rem;
+}
+
+.contact form textarea::placeholder {
+    font-size: 1rem;
+}
+
+.submit-btn {
+    justify-content: center;
+    align-items: center;
+    gap: .6rem;
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: rgb(224, 221, 221);
+    border: 1px solid black;
+    padding: 8px 16px;
+    border-radius: 24px;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+
+.ftr-bar {
+    width: 100%;
+    padding: 16px 2rem;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.ftr-bar .ftr-bar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.ftr-bar-container div {
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+}
+
+.ftr-bar-container div a {
+    width: 1.2em;
+    height: 1.2em;
+}
+
+.social {
+    width: 1.2em;
+    height: 1.2em;
+}
+
+
+
+@media (max-width:767px) {
+
+    .burger {
+        display: block;
+    }
+
+    .hero-section,
+    .about,
+    .services,
+    .gallery,
+    .contact {
+        overflow: hidden;
+    }
+
+    .navbar {
+        padding: 1.5rem 2rem;
+        width: 100%;
+        top: 100%;
+        border-top: .1rem solid rgba(0, 0, 0, 0.1);
+        background: rgba(0, 0, 0, 0.3);
+    }
+
+    .nav-list {
+        flex-direction: column;
+    }
+
+    .v-class-resp {
+        display: none;
+    }
+
+    .box-main {
+        width: 80%;
+    }
+
+    .first {
+        width: 80%;
+    }
+
+    .second {
+        width: 80%;
+    }
+
+    .box-container {
+        padding: 0 0;
+        padding-bottom: 1.2rem;
+    }
+
+    .contact form {
+        width: 80%;
+    }
+
+    .ftr-bar {
+        width: 100%;
+    }
+
+    .input-box {
+        flex-wrap: wrap;
+
+    }
+
+    .contact form .input-box input {
+        width: 100%;
+    }
+
+}
